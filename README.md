@@ -4,18 +4,18 @@
 
 指令 | ATWS
 ---|---
-响应| AP : <num>,<ssid>,<chl>,<sec>,<rssi>,<bssid> <br>[ATWS] OK 
+响应| AP : &lt;num>,&lt;ssid>,&lt;chl>,&lt;sec>,&lt;rssi>,&lt;bssid> <br>[ATWS] OK 
 
 - 连接到 AP
 
-指令 | ATPN=<ssid>,<pwd>
+指令 | ATPN=&lt;ssid>,&lt;pwd>
 ---|---
 响应 | 成功 <br>[ATPN] OK <br>失败 <br>[ATPN] ERROR:<error_code>
 error_code | 1: 命令格式错误<br>2: 参数错误<br>3: 连接 AP错误<br>4: dhcp 超时
 
 - 建立socket
 
-指令 | ATPC=<mode>,< Remote Addr>,< Remote Port>
+指令 | ATPC=&lt;mode>,&lt;Remote Addr>,&lt;Remote Port>
 ---|---
 响应 | 成功 <br>[ATPC] OK <br>失败 <br>[ATPC]:<error_code>
 参数 | mode: <br> &emsp;0:TCP
