@@ -2,6 +2,9 @@
 *.o
 *.pyc
 
+# mergetool files
+*.orig
+
 # gtags
 GTAGS
 GRTAGS
