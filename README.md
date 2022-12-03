@@ -11,7 +11,7 @@
 指令 | ATPN=&lt;ssid>,&lt;pwd>
 ---|---
 响应 | 成功 <br>[ATPN] OK <br>失败 <br>[ATPN] ERROR:<error_code>
-error_code | 1: 命令格式错误<br>2: 参数错误<br>3: 连接 AP错误<br>4: dhcp 超时
+error_code | 1: 命令格式错误<br>2: 参数错误<br>3: 连接 AP失败<br>4: dhcp 超时<br>5：无ap信息
 
 - 建立socket
 
@@ -19,14 +19,8 @@ error_code | 1: 命令格式错误<br>2: 参数错误<br>3: 连接 AP错误<br>4
 ---|---
 响应 | 成功 <br>[ATPC] OK <br>失败 <br>[ATPC]:<error_code>
 参数 | mode: <br> &emsp;0:TCP
-error_code | 1: 命令格式错误<br>2: 参数错误<br>3: 连接 server错误<br>4: 尚未连接AP
-
-- 设置透传模式
-
-指令 | ATPU
----|---
-响应 | 成功 <br>[ATPU] OK <br>失败 <br>[ATPU] ERROR:<error_code>
-error_code | 1: 命令格式错误<br>2: 尚未连server
+error_code | 1: 命令格式错误<br>2: 参数错误<br>3: 连接 server失败<br>4: 尚未连接AP
+注意|连接成功后直接进入透传模式
 
 ## 环境
 
