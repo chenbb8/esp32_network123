@@ -9,6 +9,8 @@
 #include "lwip/err.h"
 #include "lwip/sys.h"
 
+#include "app_socket_client.h"
+
 #define DEFAULT_SCAN_LIST_SIZE      50
 #define DEFAULT_SCAN_TIME_MIN       0
 #define DEFAULT_SCAN_TIME_MAX       100
@@ -230,6 +232,8 @@ void wifi_task(void *arg)
     //         portMAX_DELAY);
     wifi_scan();
     wifi_sta_connect((uint8_t*)"casa", (uint8_t*)"12345678");//用来测试的AP热点：casa
+    app_socket_client_connect((uint8_t*)"192.168.2.140", (uint8_t*)"3333");//用来测试的tcp server
+
     while(1) {
         vTaskDelay( 5000/portTICK_PERIOD_MS );
         ESP_LOGI(TAG, "delay");
