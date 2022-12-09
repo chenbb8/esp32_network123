@@ -17,7 +17,7 @@ error_code | 1: 命令格式错误<br>2: 参数错误<br>3: 连接 AP失败<br>4
 
 指令 | ATPC=&lt;mode>,&lt;Remote Addr>,&lt;Remote Port>
 ---|---
-响应 | 成功 <br>[ATPC] OK <br>失败 <br>[ATPC]:<error_code>
+响应 | 成功 <br>[ATPC] OK <br>失败 <br>[ATPC] ERROR:<error_code>
 参数 | mode: <br> &emsp;0:TCP
 error_code | 1: 命令格式错误<br>2: 参数错误<br>3: 连接 server失败<br>4: 尚未连接AP
 注意|连接成功后直接进入透传模式
