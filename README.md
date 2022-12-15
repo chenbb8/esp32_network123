@@ -35,4 +35,4 @@ board：淘宝上的ESP32-S3-DevKitC-1兼容板<br>
 
 ## 硬件连接
 esp32_TXD：IO4 <-> 串口模块:RXD<br>
-esp32_TXD：IO5 <-> 串口模块:TXD<br>
+esp32_RXD：IO5 <-> 串口模块:TXD<br>

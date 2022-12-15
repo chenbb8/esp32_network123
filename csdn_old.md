@@ -1,3 +1,5 @@
+这个文档对应的是V1.0.0之前的版本。
+
 # 创建工程
 通过<[新建esp32的vscode工程的三种方式](https://blog.csdn.net/chenbb8/article/details/128134802)>中的<通过"ESP-IDF:New Project"创建新工程>这个方法，创建一个以esp-idf/examples/wifi/scan为模板的工程esp32_network123，这也是本文中的主工程模板
 接着再通过<通过vscode的"ESP-IDF:Show Examples Project"页面中新建工程>这个方法，通过SDK中的以下几个例子：
