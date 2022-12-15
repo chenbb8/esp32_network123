@@ -1,4 +1,6 @@
-这是一个练手的工程，综合了esp32的几个example，写一个简单的透传demo。参考一下某透传模块的指令，提取出以下几条：
+对应博文：https://blog.csdn.net/chenbb8/article/details/128134389
+
+这是一个练手的工程，综合了esp32的几个example，写一个简单的透传demo。参考一下某透传模块的指令，提取出以下几条(==每条指令后应该加上换行符，比如"\n"、“\r\n”，否则将不识别==)：
 
 - 扫描AP
 
@@ -30,3 +32,7 @@ IDE：vscode 1.73.1<br>
 vscode插件：Espressif IDF v1.5.1<br>
 board：淘宝上的ESP32-S3-DevKitC-1兼容板<br>
 外置串口板子：淘宝上的cp2102 6合1串口模块<br>
+
+## 硬件连接
+esp32_TXD：IO4 <-> 串口模块:RXD<br>
+esp32_TXD：IO5 <-> 串口模块:TXD<br>
